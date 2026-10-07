@@ -17,3 +17,51 @@ th{
     color: white;
     padding: 25px;
 }
+td{
+    padding: 25px;
+}
+section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    padding: 12px;
+    }
+div{
+    border: solid black;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+#fejlecfelső{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    font-size: 15px;
+}
+#fejlecfelső p{
+    text-transform:uppercase;
+    color:#18352f;
+    font-weight: bold;
+    margin: 10px;
+}
+#fejlecfelso a{
+    color:#18352f;
+    text-decoration:underline;
+}
+span{
+    background-color: #c8e67a;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#fejlecalso{
+    background-color: #18352f;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+}
+#fejlecalso p{
+    text-transform: uppercase;
+    color:#c8e67a;
+    font-size: 10px;
+}
