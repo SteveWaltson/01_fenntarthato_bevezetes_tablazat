@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f8f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #173b35;
+}
+
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.ikon {
+    background-color: #d9ee98;
+    padding: 6px 9px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #15594c;
+    text-decoration: underline;
+}
+
+#fejlecalso {
+    background-color: #205e51;
+    color: white;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+#fejlecalso p {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d6ee8e;
+    margin: 0;
+}
+
+#fejlecalso h1 {
+    font-size: 56px;
+    line-height: 1;
+    margin: 20px 0;
+    letter-spacing: -2px;
+    color: white;
+}
+
+#fejlecalso h3 {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: normal;
+    max-width: 550px;
+    margin: 0;
+}
+
+.dobozok {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dobozok div {
+    background-color: white;
+    border: 1px solid #d5ded8;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.dobozok h3 {
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+
+.dobozok p {
+    font-size: 12px;
+    color: #7c8c85;
+    margin: 0;
+}
+
+#tablazat {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#tablazat h1 {
+    grid-column: 1;
+    font-size: 28px;
+    margin: 0;
+    color: #153b34;
+}
+
+#tablazat p {
+    grid-column: 1;
+    font-size: 13px;
+    color: #7b8983;
+    margin: 8px 0 0;
+}
+
+#tablazat span {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background-color: #e5f1d5;
+    color: #285a37;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+article {
+    background-color: white;
+    border: 1px solid #d5ded8;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+caption {
+    text-align: left;
+    font-size: 12px;
+    color: #788781;
+    padding: 15px 18px;
+}
+
+thead {
+    background-color: #195b50;
+    color: white;
+}
+
+th {
+    padding: 18px 15px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+td {
+    padding: 18px 15px;
+    font-size: 12px;
+    line-height: 1.8;
+    vertical-align: top;
+    border-bottom: 1px solid #d5ded8;
+}
+
+th:first-child,
+td:first-child {
+    width: 18%;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4) {
+    width: 17%;
+}
+
+th:last-child {
+    width: 31%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8faf7;
+}
+
+tbody td:first-child {
+    color: #145b4e;
+}
+
+strong {
+    color: #145b4e;
+    font-size: 13px;
+}
+
+small {
+    color: #5b8276;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+tbody td:last-child {
+    border-left: 2px solid #91bb75;
+}
+
+tfoot td {
+    padding: 15px 18px;
+    font-size: 11px;
+    color: #899790;
+    border-bottom: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 11px;
+    color: #7a8983;
+}
+
+footer a {
+    text-align: right;
+    color: #3a7a68;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        width: 92%;
+    }
+
+    #fejlecalso {
+        padding: 30px;
+    }
+
+    #fejlecalso h1 {
+        font-size: 36px;
+    }
+
+    .dobozok {
+        grid-template-columns: 1fr;
+    }
+
+    #tablazat {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #tablazat span {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: start;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    footer a {
+        text-align: left;
+    }
+}
