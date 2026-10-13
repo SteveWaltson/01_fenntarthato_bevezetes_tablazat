@@ -4,6 +4,9 @@
 
 body{
     font-family: "Segoe UI";
+    width: 70%;
+    align-items: center;
+    margin: auto;
 }
 h1{
     font-size: 30px;
