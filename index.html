@@ -8,16 +8,17 @@
 </head>
 <body>
     <main>
-        <header id="fejlecfelso">
-        <p><span>✳</span>Zöld döntések</p>
-        <a href="#">Ugrás a táblázathoz ↓</a>
-    </header>
-    <header id="fejlecalso">
+        <nav>
+            <p><span class="ikon">☀</span> ZÖLD DÖNTÉSEK</p>
+            <a href="#tablazat">Ugrás a táblázathoz ↓</a>
+        </nav>
+
+    <header id="fejlec">
         <p>Fenntarthatóbb iskola · HTML-táblázat minta</p>
         <h1>Egy döntés. <br> Többféle hatás.</h1>
         <h3>A fenntartható fejlődésről akkor tudunk jól gondolkodni, ha egy döntés környezeti, társadalmi és gazdasági oldalát együtt vizsgáljuk.</h3>
     </header>
-    <section>
+    <section class="dobozok">
     <div>
         <h3>🟢Környezet</h3>
         <p>Anyagok, energia, víz és az élővilág.</p>
@@ -31,55 +32,131 @@
         <p>Mihez kell pénz, munka vagy fenntartás?</p>
     </div>
     </section>
-    <header>
+    <header id="tablazat">
         <h1>Döntések az iskolában</h1>
-        <p>Néhány példa</p>
+        <p>Néhány példa arra, hogyan kapcsolódnak össze a hatások.</p>
+        <span>4 döntés · 3 szempont</span>
     </header>
     <article>
         <table>
-            <tr>
-                <caption colspan="5">Iskolai döntések és lehetséges hatásaik</caption>
-            </tr>
-            <tr>
-                <th>Iskolai döntés</th>
-                <th>Lehetséges környezeti hatás</th>
-                <th>Lehetséges társadalmi hatás</th>
-                <th>Lehetséges gazdasági hatás</th>
-                <th>Hogyan függnek össze?</th>
-            </tr>
-            <tr>
-                <td>01 / víz <br>Ivóvíz-utántöltés és saját kulacs</td>
-                <td>Kevesebb egyszer használatos palackra lehet szükség.</td>
-                <td>Az ivóvíz könnyebben elérhető a diákoknak.</td>
-                <td>Az ivóvízpont kialakítása és fenntartása pénzbe kerül.</td>
-                <td>Ha sokan tudnak vizet tölteni, kevesebb palackot vásárolhatnak. Ehhez működő, karbantartott ivóvízpont kell.</td>
-            </tr>
-            <tr>
-                <td>02 / UDVAR <br>Árnyékok adó </td>
-                <td>A fák árnyékot adnak.</td>
-                <td>Hűvösebb lesz a hőmérséklet a fák alatt.</td>
-                <td>Kevesebb áram és pénz megy el a légkodikra.</td>
-                <td>Ha sok fát ültetünk, jobban fogjuk érezni megunkat a melagebb időkben.</td>
-            </tr>
-            <tr>
-                <td>03 / Közlekedés <br> Biztonságos kerékpártároló</th>
-                <td>Tisztább levegő a nagyvárosokban is.</th>
-                <td>Többen bicikliznek, mert már nem félnek, hogy ellpoják.</th>
-                <td>Kevess pénz megy el benzinre.</th>
-                <td>Ha több biztonságos biciklitároló lenne, akkor több ember használna biciklit utazásra.</th>
-            </tr>
-            <tr>
-                <td>04 / ESZKÖZÖK <br> Számítógépek javítása csere előtt</td>
-                <td>Kevesebb szemét, és veszélyes hulladék.</td>
-                <td>Többen használnának egy gépet sokáig, mert elég csak javítai. </td>
-                <td>Olcsóbb egy gépet megjavítani, mint az újra cserélni.</td>
-                <td>Ha egy rosz gépet inkább megjavítják, mint hogy kicseréljék, akkor tovább lehet használni egyes gépeket, és nem kell folyton cserélgetni.</td>
-            </tr>
-            <tr>
-                <td colspan="5">Keskeny képernyőn a táblázat vízszintesen görgethető. A sorok lehetséges hatásokat mutatnak, nem számszerű bizonyítékokat.</td>
-            </tr>
+           <caption>Iskolai döntések és lehetséges hatásaik</caption>
+
+                <thead>
+                    <tr>
+                        <th>Iskolai döntés</th>
+                        <th>Lehetséges környezeti hatás</th>
+                        <th>Lehetséges társadalmi hatás</th>
+                        <th>Lehetséges gazdasági hatás</th>
+                        <th>Hogyan függnek össze?</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <small>01 / VÍZ</small><br>
+                            <strong>Ivóvíz-utántöltés és saját kulacs</strong>
+                        </td>
+
+                        <td>Kevesebb egyszer használatos palackra lehet szükség.</td>
+
+                        <td>Az ivóvíz könnyebben elérhető a diákoknak.</td>
+
+                        <td>Az ivóvízpont kialakítása és fenntartása pénzbe kerül.</td>
+
+                        <td>
+                            Ha sokan tudnak vizet tölteni, kevesebb palackot
+                            vásárolhatnak. Ehhez működő, karbantartott
+                            ivóvízpont kell.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <small>02 / UDVAR</small><br>
+                            <strong>Árnyékot adó növények ültetése</strong>
+                        </td>
+
+                        <td>A fák árnyékot adnak.</td>
+
+                        <td>Hűvösebb lesz a fák alatt.</td>
+
+                        <td>Kevesebb áram és pénz mehet el a légkondicionálásra.</td>
+
+                        <td>
+                            Ha sok fát ültetünk, kellemesebb lehet a környezet
+                            a melegebb időszakokban.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <small>03 / KÖZLEKEDÉS</small><br>
+                            <strong>Biztonságos kerékpártároló</strong>
+                        </td>
+
+                        <td>Tisztább lehet a levegő a nagyvárosokban is.</td>
+
+                        <td>
+                            Többen biciklizhetnek, mert kevésbé tartanak
+                            attól, hogy ellopják a kerékpárjukat.
+                        </td>
+
+                        <td>Kevesebb pénz mehet el benzinre.</td>
+
+                        <td>
+                            Ha több biztonságos kerékpártároló lenne,
+                            akkor több ember használhatna kerékpárt
+                            a közlekedéshez.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <small>04 / ESZKÖZÖK</small><br>
+                            <strong>Számítógépek javítása csere előtt</strong>
+                        </td>
+
+                        <td>Kevesebb elektronikai hulladék keletkezhet.</td>
+
+                        <td>
+                            A számítógépeket hosszabb ideig lehet használni,
+                            ha javíthatók.
+                        </td>
+
+                        <td>
+                            Olcsóbb lehet egy gépet megjavítani,
+                            mint újra cserélni.
+                        </td>
+
+                        <td>
+                            Ha egy rossz gépet inkább megjavítanak,
+                            mint kicserélnek, akkor tovább lehet használni,
+                            és nem kell folyton új eszközöket vásárolni.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Keskeny képernyőn a táblázat vízszintesen görgethető.
+                            A sorok lehetséges hatásokat mutatnak,
+                            nem számszerű bizonyítékokat.
+                        </td>
+                    </tr>
+                </tfoot>
+
         </table>
     </article>
+    <footer>
+        <p>Oktatási minta a 10. évfolyam HTML-táblázatos feladatához.</p>
+        <a href="#">
+                Kiinduló olvasmány: Zöld Föld, 9-10. évfolyam, 11-12. oldal
+        </a>
+    </footer>
     </main>
 </body>
 </html>
